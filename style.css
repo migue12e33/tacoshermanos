@@ -92,26 +92,33 @@ h6 {
 }
 
 .logo-link {
-  position: relative; /* Necesario para el pseudo-elemento */
-  color: #8B4513;     /* Color del texto */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* separación entre logo y texto */
   text-decoration: none;
-  font-weight: bold;
-  padding: 10px 20px; /* Ajusta según tamaño del logo */
+  position: relative;
 }
 
-.logo-link::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-250%, -50%); /* Centra el logo */
-  width: 100px;   /* Ajusta tamaño del logo */
-  height: 100px;  /* Ajusta tamaño del logo */
-  background-image: url('https://png.pngtree.com/png-clipart/20250421/original/pngtree-modern-taco-logo-design-png-image_20752769.png'); /* Pon la ruta de tu logo */
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.8; /* Ajusta transparencia para que el texto se lea */
-  z-index: -1;  /* Asegura que el logo quede detrás del texto */
+.logo-img {
+  width: 80px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5a2c0b; /* ejemplo color */
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .logo-img {
+    width: 50px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
 }
 
 
@@ -346,6 +353,7 @@ h4, h5, h6 {
     height: 350px; /* ajusta aquí el tamaño para celular */
   }
 }
+
 
 
 
