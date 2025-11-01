@@ -107,6 +107,7 @@ h6 {
 .logo-text {
   font-size: 24px;
   font-weight: bold;
+  font-family: 'Fredoka One';
   color: #5a2c0b; /* ejemplo color */
 }
 
@@ -353,6 +354,7 @@ h4, h5, h6 {
     height: 350px; /* ajusta aquí el tamaño para celular */
   }
 }
+
 
 
 
