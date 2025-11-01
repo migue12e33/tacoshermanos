@@ -354,7 +354,7 @@ h4, h5, h6 {
     height: 350px; /* ajusta aquí el tamaño para celular */
   }
 }
-}
+
 .fade-in-up {
   opacity: 0;
   transform: translateY(25px);
@@ -375,6 +375,7 @@ h4, h5, h6 {
     transform: translateY(0);
   }
 }
+
 
 
 
