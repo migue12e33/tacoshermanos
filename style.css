@@ -332,12 +332,20 @@ h4, h5, h6 {
     transform: scale(1.2); /* agranda el ícono */
     color: #a46b43;        /* cambia a color más claro/marrón */
 }
+.banner2 {
+  height: 700px; /* tamaño para pantalla grande */
+  max-width: 100%;
+}
 
 @media (max-width: 900px) {
-  .banner{
-    width:90%;}
-    .banner2{
-    height:70%;}
+  .banner {
+    width: 90%;
+  }
+
+  .banner2 {
+    height: 350px; /* ajusta aquí el tamaño para celular */
+  }
 }
+
 
 
