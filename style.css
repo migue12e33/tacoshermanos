@@ -1,0 +1,334 @@
+body {
+    background-color: #f1ebeb; /* fondo principal */
+    color: #fff8ec;            /* texto principal */
+    font-family: 'Fredoka', sans-serif;
+}
+/* Texto general */
+body, p, li, a {
+    font-family: 'Fredoka One', cursive; /* tipografía llamativa para todo el texto */
+    color: #a8864b; /* color crema */
+}
+
+/* Títulos principales */
+h1, h2, h3 {
+    font-family: 'Bangers', cursive; /* estilo de cartel llamativo */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* sombra ligera */
+}
+
+/* Subtítulos y secciones */
+h4, h5, h6 {
+    font-family: 'Lobster', cursive; /* elegante y moderno */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    
+}
+h4 {
+    font-size: 2rem; /* tamaño ejemplo, puedes ajustar */
+}
+
+h5 {
+    font-size: 1.8rem;
+}
+
+h6 {
+    font-size: 1.7rem;
+}
+
+/* Botones */
+.btn-brown {
+    font-family: 'Fredoka One', cursive;
+    font-weight: bold;
+    background-color: #a46b43;
+    color: #fff8ec;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-brown:hover {
+    background-color: #8b5635;
+    transform: scale(1.05);
+}
+
+/* Menú de tacos y listas */
+.card-body ul li {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1rem;
+    padding: 5px 0;
+}
+
+.card-body ul li ul li {
+    padding-left: 15px;
+    font-size: 0.95rem;
+    color: #4e2f1a;
+}
+
+/* Redes sociales */
+.social-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #fff8ec;
+}
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #f1e3d3;
+}
+
+/* Loader */
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #f1ebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #d3b58f;
+  border-top-color: #8b5e3c;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.logo-link {
+  position: relative; /* Necesario para el pseudo-elemento */
+  color: #8B4513;     /* Color del texto */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px; /* Ajusta según tamaño del logo */
+}
+
+.logo-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-250%, -50%); /* Centra el logo */
+  width: 100px;   /* Ajusta tamaño del logo */
+  height: 100px;  /* Ajusta tamaño del logo */
+  background-image: url('https://png.pngtree.com/png-clipart/20250421/original/pngtree-modern-taco-logo-design-png-image_20752769.png'); /* Pon la ruta de tu logo */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8; /* Ajusta transparencia para que el texto se lea */
+  z-index: -1;  /* Asegura que el logo quede detrás del texto */
+}
+
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+/* Colores base */
+.bg-crema {
+  background-color: #f1ebeb;
+}
+.bg-crema-claro {
+  background-color: #f1ebeb;
+}
+.text-brown {
+  color: #8b5e3c !important;
+}
+.btn-brown {
+  background-color: #8b5e3c;
+  color: white;
+}
+.btn-brown:hover {
+  background-color: #6b4529;
+  color: white;
+}
+/* Títulos principales */
+h1, h2, h3 {
+    font-family: 'Fredoka One', cursive; /* título principal */
+}
+
+h4, h5, h6 {
+    font-family: 'Bangers', cursive; /* subtítulos llamativos */
+}
+
+/* Opcional para logotipo o frases especiales */
+.logo-text {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+
+/* Inicio */
+#inicio {
+  background: linear-gradient(135deg, #f1ebeb, #f1ebeb);
+  height: 100vh;
+}
+
+/* Galería */
+#galeria img {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* Menú y tarjetas */
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Promociones */
+.promo-card img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* Pedidos */
+#pedidos {
+  background: linear-gradient(135deg, #f1ebeb, #f1ebeb);
+}
+.btn-pedido {
+  background-color: #8b5e3c;
+  color: white;
+  border-radius: 50px;
+  padding: 12px 30px;
+  transition: all 0.3s ease;
+}
+.btn-pedido:hover {
+  background-color: #6b4529;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+/* Reseñas */
+#reseñas {
+  background-color: #f1ebeb; /* fondo crema suave */
+  padding: 60px 0;
+}
+#reseñas .card {
+  background-color: #e7e1d8; /* tarjeta ligeramente más clara */
+  border: none;
+  border-radius: 1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+#reseñas .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+#reseñas .card-title {
+  color: #5a3810;
+  font-weight: 600;
+}
+#reseñas .card-text {
+  color: #4b2e05;
+}
+
+/* Ubicación / mapa */
+#ubicacion {
+  padding: 60px 0;
+  background-color: #f1ebeb;
+}
+.map-container {
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+.map-container iframe {
+  display: block;
+  border: 0;
+}
+
+/* Asegura que container no fuerce fondo distinto */
+#reseñas .container,
+#ubicacion .container {
+  background: transparent;
+}
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+.btn-brown {
+  background-color: #a46b43;
+  color: #f1ebeb;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-brown:hover {
+  background-color: #8b5635;
+}
+
+.dropdown-menu {
+  background-color: #f1ebeb;
+  border: 1px solid #f5f4f3;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.dropdown-item:hover {
+  background-color: #f1ebeb;
+}
+
+.text-brown {
+  color: #6b3e1d;
+}
+
+
+#bebidasSalsas .card {
+    background-color: #fff8ec; /* fondo crema */
+    color: #6b3e1d;            /* texto marrón */
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+#bebidasSalsas .card:hover {
+    transform: scale(1.03);
+}
+#bebidasSalsas .card-img-top {
+    width: 100%;
+    height: 200px; /* ajusta según prefieras */
+    object-fit: cover; /* se ajusta completo y recorta si es necesario */
+    border-radius: 8px 8px 0 0;
+}
+
+
+
+
+
+.btn-brown {
+  background-color: #a46b43;
+  color: #f1ebeb;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-brown:hover {
+  background-color: #8b5635;
+}
+
+.bg-crema {
+  background-color: #f1ebeb;
+}
+
+.text-brown {
+  color: #6b3e1d;
+}
+
+.card-body ul li {
+  padding: 3px 0;
+}
+
+.social-icon {
+    color: #6b3e1d; /* marrón oscuro */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* agranda el ícono */
+    color: #a46b43;        /* cambia a color más claro/marrón */
+}
