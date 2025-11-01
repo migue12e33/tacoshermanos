@@ -332,3 +332,8 @@ h4, h5, h6 {
     transform: scale(1.2); /* agranda el ícono */
     color: #a46b43;        /* cambia a color más claro/marrón */
 }
+
+@media (max-width: 900px) {
+  .banner{
+    width:90%;}
+}
